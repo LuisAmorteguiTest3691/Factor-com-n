@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Factorización por Factor Común</title>
+
+  <!-- Configuración de MathJax (versión 3) para renderizar LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <h1>Factorización por Factor Común</h1>
+
+  <div class="polynomial-container">
+    <label for="userPolynomial">Ingrese un polinomio:</label><br>
+    <input 
+      type="text" 
+      id="userPolynomial" 
+      placeholder="Ej: 4x^2 - 500x,  6x^3y^2 - 9xy^4 + 3xy, etc."
+    />
+    <button id="factorBtn">Factorizar</button>
+  </div>
+
+  <!-- Sección donde se mostrarán los pasos de la factorización -->
+  <div id="steps"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
